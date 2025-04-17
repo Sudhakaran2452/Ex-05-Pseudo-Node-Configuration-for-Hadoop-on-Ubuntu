@@ -9,7 +9,7 @@ To implement Pseudo Node configuration for Hadoop on ubuntu
 
 ## Pre-requisites:
 
-### a) jdk
+### a) jdk:
 
 Single-Node Configuration
 
@@ -101,7 +101,7 @@ Include the following lines in hadoop-env.sh file
     export HADOOP_PREFIX=/usr/local/hadoop-2.5.1
 ```
 
-b)	core-site.xml
+### b)	core-site.xml:
 Configure the directory for Hadoop to store its data files, the network ports it listens to, etc. Setup will use Hadoop’s Distributed File System (HDFS-single local machine)
 ```
     $ mkdir -p /app/hadoop/tmp
@@ -122,7 +122,7 @@ Include the following lines in core-site.xml file between <configuration> and
     </property>
 ```
 
-c)	mapred-site.xml
+### c)	mapred-site.xml:
 ```
      $sudo cp mapred-site.xml.template mapred-site.xml
 ``` 
@@ -137,7 +137,7 @@ Include the following lines in mapred-site.xml file
 
  
 
-d)	hdfs-site.xml
+### d)	hdfs-site.xml:
 Include the following lines in hdfs-site.xml file
 ```
     <property>
@@ -147,7 +147,7 @@ Include the following lines in hdfs-site.xml file
 ```
 
 
-e)	yarn-site.xml
+### e)	yarn-site.xml:
 Include the following lines in yarn-site.xml file
 ```
     <property>
